@@ -45,7 +45,7 @@ public class UserDataInput {
 
         String fileName = "user"+".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true))) {
-            String userData = "<"+ lastName + ">" + "<"+ firstName + ">" + "<" + middleName + ">" + "<"+ birthDate + ">" + "<" +
+            String userData = "<" + lastName + ">" + "<" + firstName + ">" + "<" + middleName + ">" + "<" + birthDate + ">" + "<" +
                     phoneNumber + ">" + "<" + gender + ">";
             writer.write(userData);
             writer.newLine();
